@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MMSLoginController"
+        alignment="CENTER" hgap="5" vgap="10" styleClass="background" prefHeight="300.0" prefWidth="400.0">	
+        <Text text="Login" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"></Text>
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    
+        <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    
+        <Button fx:id="okButton" text="OK" onAction="#handleOk" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Button fx:id="cancelButton" text="Cancel" onAction="#handleCancel" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <stylesheets>
+            <URL value="@mmsfx.css"/>
+        </stylesheets>
+</GridPane>
